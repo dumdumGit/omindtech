@@ -54,7 +54,7 @@ class Posts extends Component
             'title' => $this->title,
             'content' => $this->content,
             'published' => $this->published,
-            'user_id' => Auth::id()
+            'user_id' => Auth::user()->id
         ]);
 
         session()->flash('message', $this->post_id ? 'Post dengan judul : '. $this->title . ' Berhasil di update': $this->title .'Post dengan judul : '. $this->title .' Ditambahkan');

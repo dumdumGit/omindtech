@@ -62,7 +62,7 @@ class Gallery extends Component
             'title' => $this->title,
             'description' => $this->description,
             'image_url' => $path,
-            'user_id' => Auth::id()
+            'user_id' => Auth::user()->id
         ]);
 
         session()->flash('message', $this->image_id ? 'Image dengan judul : '. $this->title . ' Berhasil di update': $this->title .'Image dengan judul : '. $this->title .' Ditambahkan');
