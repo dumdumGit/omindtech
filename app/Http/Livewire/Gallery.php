@@ -50,7 +50,7 @@ class Gallery extends Component
         $this->validate([
             'title' => 'required|string|max:100|min:5',
             'description' => 'string',
-            'image_url' => 'image|required|max:1024'
+            'image_url' => 'image|max:1024'
         ]);
 
         $upload = $this->image_url;
