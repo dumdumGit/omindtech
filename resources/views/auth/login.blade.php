@@ -43,6 +43,11 @@
                     {{ __('Login') }}
                 </x-jet-button>
             </div>
+
+            <div class="flex items-center justify-end mt-4">
+                username : adminku@gmail.com || dumdum@gmail.com
+                password : password
+            </div>
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
